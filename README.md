@@ -1,0 +1,1 @@
+# coursehunters-video-browser-extension

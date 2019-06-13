@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Download CourseHunters Videos",
+  "version": "0.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.coursehunters.net/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "page_action": {
+    "default_title": "Download CourseHunters Videos",
+    "default_icon": {
+      "19": "icon/icon19.png",
+      "38": "icon/icon38.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon/icon16.png",
+    "32": "icon/icon32.png",
+    "64": "icon/icon64.png"
+  }
+}

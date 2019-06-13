@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 700px;
+}
+
+.center {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a + span {
+  margin: 4px;
+}
