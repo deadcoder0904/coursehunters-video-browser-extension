@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
     }
 
     const videos = Array.from(lis).map((li, i) => {
-      const name = li.querySelector('.lessons-name').innerHTML
+      const name = (li.querySelector('.lessons-name>font>font') || li.querySelector('.lessons-name')).innerHTML
       const href = li.querySelector('link[itemprop="url"]').getAttribute('href')
       const time = li
         .querySelector('meta[itemprop="duration"]')
